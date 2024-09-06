@@ -1,0 +1,18 @@
+
+
+
+
+
+ZoneControl:ContaminantController,
+    OUH:CO2ControllerHF02EastSt.,         !- Name
+    Thermal Zone: Tapperum - III - 06.00.034/06.00.030,               !- Zone Name
+    OUH:AlwaysOn,        !- Carbon Dioxide Control Availability Schedule Name
+    OUH:CO2ConcentrationSetpointSchedule;     !- Carbon Dioxide Setpoint Schedule Name
+
+
+
+DesignSpecification:ZoneAirDistribution,
+      OUH:DSZAD,  !- Name
+      1,                       !- Zone Air Distribution Effectiveness in Cooling Mode {dimensionless}
+      0.8,                       !- Zone Air Distribution Effectiveness in Heating Mode {dimensionless}
+      ;                        !- Zone Air Distribution Effectiveness Schedule Name
